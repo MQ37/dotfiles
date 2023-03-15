@@ -1,0 +1,6 @@
+xrandr --output DP-1 --primary
+sxhkd &
+polybar mon_1 &
+polybar mon_2 &
+nitrogen --restore
+xset s noblank
