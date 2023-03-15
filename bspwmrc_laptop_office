@@ -1,0 +1,45 @@
+#! /bin/sh
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
+# launch sxhkd
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+# setup monitors
+bspc monitor DP-2 -d I II III IV V VI VII VIII IX
+bspc monitor eDP-1 -d X
+
+# window config
+bspc config border_width         4
+bspc config window_gap          12
+
+# config
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+
+# caps is escape
+setxkbmap -option caps:escape
+
+# polybar
+env MONITOR=DP-2 polybar primary &
+env MONITOR=eDP-1 polybar secondary &
+
+# wifi
+nm-applet &
+
+# bluetooth
+blueman-applet &
+
+# dunst for notifications
+dunst &
+
+# default lockscreen also for inactivity
+xss-lock slock &
+
+# wallpaper
+feh --bg-scale /home/mq/wallpapers/wallhaven-ym62z7_1920x1080.png
+
+# java fix
+wmname LG3D
+
