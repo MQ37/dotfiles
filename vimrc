@@ -38,7 +38,9 @@ Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 " 9000+ Snippets
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'nvim-tree/nvim-tree.lua'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 
 lua require'nvim-tree'.setup {}
+lua require'lspconfig'.pyright.setup{}
