@@ -60,6 +60,8 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
 Plug 'luk400/vim-jukit'
+
+Plug 'akinsho/git-conflict.nvim'
 call plug#end()
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -69,6 +71,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 lua require'nvim-tree'.setup {}
 lua require'lspconfig'.pyright.setup{}
+lua require'git-conflict'.setup()
 
 
 lua <<EOF
