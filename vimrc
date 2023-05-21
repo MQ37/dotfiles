@@ -1,5 +1,7 @@
 syntax on
 
+colorscheme industry
+
 let mapleader = ","
 
 set tabstop=4
