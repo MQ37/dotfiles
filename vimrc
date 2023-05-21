@@ -48,7 +48,8 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 
-Plug 'github/copilot.vim'
+"Plug 'github/copilot.vim'
+Plug 'Exafunction/codeium.vim'
 
 "Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
