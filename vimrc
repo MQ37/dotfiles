@@ -34,7 +34,7 @@ nnoremap yys "+yy
 noremap <C-u> <C-^>
 noremap <C-p> :find 
 
-call plug#begin()
-
-call plug#end()
+"call plug#begin()
+"
+"call plug#end()
 
